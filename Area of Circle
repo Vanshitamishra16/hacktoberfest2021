@@ -1,0 +1,15 @@
+#include <iostream.h>
+ using namespace std;
+
+float area(float r){
+    if(r>0)
+     return 3.14*r*r;
+     return 0;
+ }
+ int main(){
+     float radius;
+     cout<<"Enter the radius of the circle."<<endl;
+     cin>>radius;
+     cout<<"The area of the circle is "<<area(radius)<<" sq.unit "<<endl;
+     return 0;
+ }
