@@ -1,0 +1,23 @@
+#include <iostream.h>
+using namespace std;
+
+int main(){
+    int month,year;
+    cout<<"Enter the month: "<<endl;
+    cin>>month;
+    cout<<"Enter the year: "<<endl;
+    cin>>year;
+    if(month==2 & year%4==0 || year%100==0 & year%4==0){
+        cout<<"NUmber of days are 29."<<endl;
+    }
+    else if(month==1 , month==3, month==5,month==7,month==9,month==11 ){
+        cout<<"NUmber of days are 31."<<endl;
+    }
+    else if(month==2){
+        cout<<"Number of days are 28."<<endl;
+    }
+    else{
+        cout<<"NUmber of days are 30."<<endl;
+    }
+    return 0;
+}
