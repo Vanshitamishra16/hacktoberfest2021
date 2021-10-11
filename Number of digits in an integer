@@ -1,0 +1,15 @@
+#include <iostream.h>
+using namespace std;
+
+int main(){
+    int num,digit=0;
+    cout<<"Enter the num: "<<endl;
+    cin>>num;
+    do{
+    num=num/10;
+    digit++;
+    }
+    while(num!=0);
+     cout<<"The number of digits in the given integer is "<<digit;
+    return 0;
+}
